@@ -1,0 +1,43 @@
+<!doctype html>
+  <head>
+      <title>testing</title>
+    <style type="text/css">
+        .dropdown p {
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .dropdown select {
+
+            border: 0 !important;  /*Removes border*/
+            -webkit-appearance: none;  /*Removes default chrome and safari style*/
+            -moz-appearance: none; /* Removes Default Firefox style*/
+            background: url('dropdown_arrow.png') no-repeat;  /*Adds background-image*/
+            background-position: 82px 7px;  /*Position of the background-image*/
+            width: 100px; /*Width of select dropdown to give space for arrow image*/
+            text-indent: 0.01px; /* Removes default arrow from firefox*/
+            text-overflow: "";  /*Removes default arrow from firefox*/
+
+            /*My custom style for fonts*/
+
+            color: #1455a2;
+        }
+        /*(IE Fix) */
+        select::-ms-expand {
+            display: none;
+        }
+    </style>
+</head>
+  <body>
+      <div class="dropdown">
+          <p>Show: </p>
+
+          <select>
+              <option>18 per page</option>
+              <option>10 per page</option>
+              <option>5 per page</option>
+
+          </select>
+      </div> <!-- DropDown -->
+</body>
+</html>
